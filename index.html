@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliza Rosca</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f0940c5a97.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Eliza Rosca</h1>
+        <h2>Database Analyst</h2>
+    </header>
+    <main>
+        <button id="scroll-button">
+            <i class="fa-solid fa-chevron-down" id="chevron-icon"></i>
+        </button>
+        <div id="window">
+            <div id="tab-bar">
+                <div class="tab" id="about-me-tab">
+                    <h3><i class="fa-solid fa-face-smile"></i>About Me</h3>
+                </div>
+                <div class="tab" id="skills-tab">
+                    <h3><i class="fa-solid fa-file-lines"></i>Resume/Skills</h3>
+                </div>
+                <div class="tab" id="projects-tab">
+                    <h3><i class="fa-solid fa-bars-progress"></i>Projects</h3>
+                </div>
+                <div class="tab" id="contact-tab">
+                    <h3><i class="fa-solid fa-link"></i>Contact/Links</h3>
+                </div>
+            </div>
+            <div id="navigation-bar">
+                <div id="nav-buttons">
+                    <div class="button-container" id="arrow-left">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="button-container" id="arrow-right">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="button-container" id="refresh">
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </div>
+                </div>
+                <div id="address-bar">
+                    <p id="address-about">elizarosca/explains-herself</p>
+                    <p id="address-skills">elizarosca/knows-things</p>
+                    <p id="address-projects">elizarosca/does-things</p>
+                    <p id="address-contact">elizarosca/wants-contact</p>
+                </div>
+                <div class="img-container">
+                    <img src="./resources/portrait-transparent.png" id="small-portrait">
+                </div>
+                <button id="tabs-button">4</button>
+                <i class="fa-solid fa-angle-up" id="pull-up"></i>
+
+
+            </div>
+
+            <div id="content">
+                <div class="page" id="about-page">
+                    <div class="content-container">
+                        <div class="img-container">
+                            <img src="./resources/portrait-transparent.png" id="portrait">
+                        </div>
+                        <h4>Hello!</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+                <div class="page" id="skills-page">
+                    <div id="resume-container">
+                        <a class="button short"
+                            href="http://www.google.com">Resume</a>
+                    </div>
+                    <div id="skills">
+                        <div class="skill">
+                            <i class="fa-brands fa-html5 fa-3x"></i>
+                            <label>HTML</label>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-css3-alt fa-3x"></i>
+                            <label>CSS</label>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-js fa-3x"></i>
+                            <label>Javascript</label>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-react fa-3x"></i>
+                            <label>React/Redux</label>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-git fa-3x"></i>
+                            <label>Git</label>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-github fa-3x"></i>
+                            <label>Github</label>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-chrome fa-3x"></i>
+                            <label>Developer Tools</label>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-solid fa-terminal fa-3x"></i>
+                            <label>Terminal</label>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-solid fa-c fa-3x"></i>
+                            <label>C Language</label>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-java fa-3x"></i>
+                            <label>Java</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="page" id="projects-page">
+                    <div class="project">
+                        <div class="img-container">
+                            <img src="./resources/project_screenshot_01.png" id="rocket-thumbnail">
+                        </div>
+                        <div class="project-info">
+                            <h4>Project one</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            </p>
+                            <div class="project-buttons">
+                                <a class="button short live" href="">Live</a>
+                                <a class="button short code" href="">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="img-container">
+                            <img src="./resources/project_screenshot_02.png" id="rocket-thumbnail">
+                        </div>
+                        <div class="project-info">
+                            <h4>Project two</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                            <div class="project-buttons">
+                                <a class="button short live" href="">Live</a>
+                                <a class="button short code" href="">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="img-container">
+                            <img src="./resources/project_screenshot_03.png" id="rocket-thumbnail">
+                        </div>
+                        <div class="project-info">
+                            <h4>Project three</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                            <div class="project-buttons">
+                                <a class="button short live" href="">Live</a>
+                                <a class="button short code" href="">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page" id="contact-page">
+                    <div class="content">
+                        <div class="info">
+                            <label for="email">Personal:</label>
+                            <a class="selectable" id="email">elyza.rosca@gmail.com</a>
+                        </div>
+                        <a class="button long" id="github-button" href=""><i
+                                class="fa-brands fa-github fa-xl"></i>Github</a>
+                        <a class="button long" id="linkedin-button"
+                            href=""><i
+                                class="fa-brands fa-linkedin fa-xl"></i></i>LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>© Copyright 2023</p>
+    </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>
